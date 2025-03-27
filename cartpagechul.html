@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page - CHUL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+        .item-details {
+            display: flex;
+            align-items: center;
+        }
+        .item-details img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+        .item-details .item-name {
+            font-size: 18px;
+            color: #333;
+        }
+        .item-price, .item-quantity, .item-total {
+            font-size: 16px;
+            color: #555;
+        }
+        .cart-summary {
+            margin-top: 20px;
+            text-align: right;
+        }
+        .cart-summary h2 {
+            font-size: 20px;
+            color: #333;
+        }
+        .checkout-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .checkout-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Cart</h1>
+        <div class="cart-item">
+            <div class="item-details">
+                <img src="product1.jpg" alt="Product Image">
+                <span class="item-name">Product Name 1</span>
+            </div>
+            <span class="item-price">$10.00</span>
+            <span class="item-quantity">Qty: 1</span>
+            <span class="item-total">$10.00</span>
+        </div>
+        <div class="cart-item">
+            <div class="item-details">
+                <img src="product2.jpg" alt="Product Image">
+                <span class="item-name">Product Name 2</span>
+            </div>
+            <span class="item-price">$20.00</span>
+            <span class="item-quantity">Qty: 2</span>
+            <span class="item-total">$40.00</span>
+        </div>
+        <div class="cart-summary">
+            <h2>Total: $50.00</h2>
+            <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+        </div>
+    </div>
+</body>
+</html>
